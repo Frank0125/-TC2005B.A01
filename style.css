@@ -1,3 +1,13 @@
+header div {
+    text-align: right;
+}
+header h1 {
+    text-align: center;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 div p {
     text-align: center;
 }
@@ -8,7 +18,7 @@ div img {
     width: 75%; 
 }
 
-body div div {
+body div a div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,17 +26,40 @@ body div div {
     text-align: center;
 }
 
-section div {
+
+main article div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    padding-right: 20%;
 }
 
-section div img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+main article div img {
+    margin-top: auto;
+    margin-bottom: auto;
     width: 10%;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+}
+
+footer a {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 0.1%;
+    height: .1%;
+    
+}
+
+footer a div {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+    
