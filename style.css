@@ -1,0 +1,32 @@
+div p {
+    text-align: center;
+}
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%; 
+}
+
+body div div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
