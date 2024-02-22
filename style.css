@@ -1,21 +1,55 @@
-header div {
-    text-align: right;
-}
-header h1 {
-    text-align: center;
-    padding: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
-div p {
-    text-align: center;
+header  {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background-color: azure;
 }
-div img {
+
+header div {
+    flex-shrink: 2;
+    text-align: center;
+    font-size: large;
+    font-family: 'Trebuchet MS';
+    background-color: rgb(27, 182, 130);
+    color: rgba(221, 2, 250, 0.623);
+    width: 5%;
+    border-radius: 15%;
+    border: 0.2rem solid;   
+    border-color: rgb(255, 149, 10);
+    padding: 0%;
+    margin: 0%;
+}
+body  h1 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+    color: rgb(47, 228, 228);
+    font-style: italic;
+}
+
+body div {
+    background-color: honeydew;
+    padding-bottom: 1%;
+}
+
+body div p {
+    text-align: center;
+    padding: 2%;
+}
+body div img {
+    padding-top: 2%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%; 
+    border: .1 rem solid;
+    border-radius: 10%;
+    flex-shrink: 2;
 }
 
 body div a div {
@@ -27,17 +61,24 @@ body div a div {
 }
 
 
+main article p {
+    padding: 1%;
+    border-radius: 5%;
+    color: gold;
+    background-color: black;
+    text-align: justify;
+}
+
 main article div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
     padding-right: 20%;
+
 }
 
 main article div img {
-    margin-top: auto;
-    margin-bottom: auto;
     width: 10%;
 }
 
@@ -45,7 +86,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 2%;
+    background-color: crimson;
 }
 
 footer a {
@@ -53,13 +94,29 @@ footer a {
     padding-right: 15%;
     width: 0.1%;
     height: .1%;
-    
+    align-items: center;
+    text-align: center;
 }
 
 footer a div {
     display: flex;
     flex-wrap: wrap;
-    
-    
+}
+
+footer a div h3 {
+    color:aliceblue;
+}
+
+.blend {
+    mix-blend-mode: multiply;
+}
+
+a:link {
+    text-decoration: none;
+    color:cadetblue
 }
     
+a:hover {
+    text-decoration: underline;
+    color:rgb(46, 92, 4)
+}
