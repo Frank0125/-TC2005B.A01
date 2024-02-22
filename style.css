@@ -5,6 +5,7 @@
 
 header  {
     display: flex;
+    flex: wrap;
     flex-direction: row-reverse;
     justify-content: right;
     background-color: azure;
@@ -74,37 +75,41 @@ main article div {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    font-size: 3rem;
     padding-right: 20%;
-
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 main article div img {
-    width: 10%;
+    width: 12%;
 }
 
 footer {
     display: flex;
-    justify-content: center;
+    flex: wrap;
+    justify-content: space-evenly;
     text-align: center;
-    background-color: crimson;
+    background-color: red;
+    height: 2rem;
+    padding-top: 0.5rem;
 }
 
-footer a {
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 0.1%;
-    height: .1%;
-    align-items: center;
-    text-align: center;
-}
 
 footer a div {
+    background-color: crimson;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
 }
 
 footer a div h3 {
-    color:aliceblue;
+    color:rgba(246, 89, 233, 0.86);
 }
 
 .blend {
