@@ -1,33 +1,30 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-header  {
+header {
     display: flex;
-    flex: wrap;
-    flex-direction: row-reverse;
-    justify-content: right;
+    justify-content: end;
     background-color: azure;
 }
 
 header div {
-    flex-shrink: 2;
     text-align: center;
     font-size: large;
     font-family: 'Trebuchet MS';
     background-color: rgb(27, 182, 130);
     color: rgba(221, 2, 250, 0.623);
-    width: 5%;
+    width: 3rem;
     border-radius: 15%;
-    border: 0.2rem solid;   
+    border: 0.2rem solid;
     border-color: rgb(255, 149, 10);
-    padding: 0%;
-    margin: 0%;
 }
-body  h1 {
+
+body h1 {
     text-align: center;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: bisque;
     color: rgb(47, 228, 228);
     font-style: italic;
@@ -35,32 +32,24 @@ body  h1 {
 
 body div {
     background-color: honeydew;
-    padding-bottom: 1%;
+    padding: 2% 0;
 }
 
 body div p {
     text-align: center;
     padding: 2%;
 }
+
 body div img {
-    padding-top: 2%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%; 
-    border: .1 rem solid;
-    border-radius: 10%;
-    flex-shrink: 2;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 body div a div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 }
-
 
 main article p {
     padding: 1%;
@@ -72,13 +61,11 @@ main article p {
 
 main article div {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     font-size: 3rem;
     padding-right: 20%;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
 }
 
 main article div img {
@@ -87,41 +74,60 @@ main article div img {
 
 footer {
     display: flex;
-    flex: wrap;
     justify-content: space-evenly;
-    text-align: center;
     background-color: red;
-    height: 2rem;
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
 }
-
 
 footer a div {
     background-color: crimson;
     width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 0.5rem 0;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
 }
 
 footer a div h3 {
-    color:rgba(246, 89, 233, 0.86);
-}
-
-.blend {
-    mix-blend-mode: multiply;
+    color: rgba(246, 89, 233, 0.86);
 }
 
 a:link {
     text-decoration: none;
-    color:cadetblue
+    color: cadetblue;
 }
-    
+
 a:hover {
     text-decoration: underline;
-    color:rgb(46, 92, 4)
+    color: rgb(46, 92, 4);
+}
+
+@media (max-width:640px) {
+    header {
+        justify-content: center;
+    }
+    header div {
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        padding: 0.5rem;
+        background-color: blueviolet;
+        display: flex;
+        border-radius: 1rem;
+    }
+
+    body div img {
+        width: 100%;
+    }
+
+    main article div {
+        font-size: 2rem;
+        padding-right: 10%;
+    }
+
+    footer a div {
+        padding: 0.25rem 0;
+        font-size: 1rem;
+    }
 }
